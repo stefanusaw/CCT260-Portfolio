@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stefanus Albert Welong | Contact Me</title>
+    <link href="style_cont.css" rel="stylesheet">
+    <link rel="icon" href="photos/red_circle/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="photos/red_circle/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header><a href="main.html" style="color: aliceblue; text-decoration: none;">Stefanus Albert Welong</a></header>
+    <div class="nav">
+        <a href="main.html">Home</a>
+        <a href="about.html">About Stef</a>
+        <a href="process.html">Process</a>
+        <a href="resume.html">Resume</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+    <!-- Font Increase and Decrease Buttons -->
+    <div id="font-controls">
+        <button class="font-control-btn" onclick="adjustFontSize(-1)"><i class="fas fa-search-minus"></i></button>
+        <button class="font-control-btn" onclick="adjustFontSize(1)"><i class="fas fa-search-plus"></i></button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <div id="content">
+        <section class="sub">
+            <h1>Contact Me</h1>
+            <img src="photos/my_photo2.jpeg" alt="Profile Photo" id="profile-photo">
+        </section>
+        <section class="sub">
+
+            <h2 class="contact">Get in Touch!</h2>
+            <p>Feel free to reach out to me using the form below or visit my social media!<br> If possible, we can even
+                go for a quick
+                coffee!</p>
+            <h5 class="contact">*Field must be filled</h5>
+
+            <form>
+                <label for="name">*Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">*Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="number">Phone Number:</label>
+                <input type="text" id="number" name="number" required>
+
+                <label for="origin">City/Country:</label>
+                <input type="text" id="origin" name="origin" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="submit" value="Send Message">
+
+            </form>
+        </section>
+        <!-- Embedded map of UTM -->
+        <section class="sub">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.7976447785522!2d-79.66525902382872!3d43.5482598711072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b43e3135af203%3A0x713c168866b9f492!2sUniversity%20of%20Toronto%20Mississauga!5e0!3m2!1sen!2sca!4v1699901793755!5m2!1sen!2sca"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </div>
+
+    <!-- Javascripts utilized for font size modification and smooth transition between pages -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetPage = this.getAttribute('href');
+
+                    document.body.classList.add('fade-out');
+                    setTimeout(() => {
+                        window.location.href = targetPage;
+                    }, 500);
+                });
+            });
+        });
+    </script>
+
+    <script>
+        function adjustFontSize(change) {
+            var content = document.getElementById('content');
+            var currentSize = window.getComputedStyle(content, null).getPropertyValue('font-size');
+            var newSize = parseFloat(currentSize) + change + 'px';
+
+            content.style.fontSize = newSize;
+        }
+    </script>
+    <br><br>
+
+    <div class="footer">
+        <a href="https://github.com/stefanusaw" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/stefanusa-welong" target="_blank">LinkedIn</a>
+        <a href="mailto:stefanus.welong@mail.utoronto.ca">stefanus.welong@mail.utoronto.ca</a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stefanus Albert Welong | Process</title>
+    <link href="style_process.css" rel="stylesheet">
+    <link rel="icon" href="photos/red_circle/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="photos/red_circle/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header><a href="main.html" style="color: aliceblue; text-decoration: none;">Stefanus Albert Welong</a></header>
+    <div class="nav">
+        <a href="main.html">Home</a>
+        <a href="about.html">About Stef</a>
+        <a class="active" href="process.html">Process</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    <div id="font-controls">
+        <button class="font-control-btn" onclick="adjustFontSize(-1)"><i class="fas fa-search-minus"></i></button>
+        <button class="font-control-btn" onclick="adjustFontSize(1)"><i class="fas fa-search-plus"></i></button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+
+    <a href="#top" id="back-to-top-right">Back to Top</a>
+    <a href="#top" id="back-to-top-left">Back to Top</a>
+
+    <div id="content">
+        <center>
+            <div id="table-of-content">
+                <h3>Table of Content</h3>
+                <nav>
+                    <a style="color: aliceblue;" href="#rationale">Rationale</a><br>
+                    <a style="color: aliceblue;" href="#inspiration">Inspiration</a><br>
+                    <a style="color: aliceblue;" href="#planning">Planning</a><br>
+                    <a style="color: aliceblue;" href="#ia">Information Architecture</a><br>
+                    <a style="color: aliceblue;" href="#wireframe">Wireframe</a>
+                </nav><br><br>
+            </div>
+        </center>
+        <h1>CCT260 Project 2 Process</h1>
+        <section id="rationale">
+            <h2>Rationale</h2>
+            <h3>This project is a digital portfolio web design using HTML and CSS. The portfolio showcases front-end web development
+                skills and consideration of the WCAG 2.0 guidelines to ensure that the UI/UX design is at its best to complement a
+                variety of users. JavaScript is also utilized to make the webpage more responsive and comply with principles of
+                inclusivity. The webpage design is made to be compatible with Firefox, Chrome, and Safari on a desktop computer for
+                a standard 1280px screen size. </h3>
+        </section>
+        <section id="inspiration">
+            <h2>Inspiration</h2>
+            <h3>There are several design inspirations that I base my web development project on. First, I love the idea of a
+                seamless design in which components of the webpage are blended in with the background while maintaining the factor
+                that allows them to be distinguishable. As a result, I used a seamless navigation bar that is distinguishable with a
+                different-colored design when its state is active. I also have my landing page simple and concise, but direct and
+                meaningful – the message on the landing page is about welcoming users to my digital portfolio. The image below shows the
+                nav bar used in this webpage.
+                </h3>
+            <img src="photos/seamless_nav.jpeg" alt="info_arch" class="image" style="border: 2px solid white;">
+
+            <h3>Furthermore, to make my webpage interactive, I use flip cards for the page about me so that users can interact with them
+                instead of having to see a page full of writing. I like to have users interact with my page so that they can find
+                interesting stuff without disclosing everything at once (principle of disclosure).</h3>
+            <img src="photos/hover_front.jpeg" alt="hov_front" class="image-card" style="border: 2px solid white;">
+            <img src="photos/hover_back.jpeg" alt="hov_back" class="image-card" style="border: 2px solid white;">
+            <h3>The above images are example of my use of flipcard. The photos of me when hovered will show the text describing me
+                as an individual </h3>
+
+        </section>
+        <section id="planning">
+            <h2>Planning</h2>
+            <h3>
+                I base my design of this digital portfolio according to the WCAG 2.0 guidelines. The WCAG 2.0 guideline for web design
+                focuses on 4-key principles: perceivable, operable, understandable, and robust.<br>
+            </h3>
+            <h4>Perceivable is defined as information and user interface components must be presentable to users in ways they can
+                perceive. On the page with a lot of text such as the process and resume page, there is a button to increase and
+                decrease the font size to accommodate individuals who are vision impaired. The layout of the portfolio overall also
+                complies with the adaptability guideline, in which contents are presented in meaningful sequences that are easily
+                identifiable and programmatically determined. Color choice and contrast are also selected to the best convenience of
+                the user, with a bright shade of blue on white/black text. The video files also allow full freedom of control by the
+                user, with a pause-play button usable at the discretion of the user. <br></h4>
+            <h4>Operable is defined as user interface components and navigation being operable. All contents can be accessed by
+                clicks and keyboard inputs, and no content is designed in a way that causes seizures. The cool tone of the
+                background and content contrast made sure of this. Quick links and status are also provided throughout the webpage
+                to ensure that the webpage is navigable. The pages are titled and utilize the headings of HTML, and the text font is
+                ensured to be accessible.<br></h4>
+            <h4>Understandable is defined by information and operation of the user interface being understandable, meaning that it
+                is both readable and comprehendible. The design ensures that all words are from the English lexicon and uses the
+                Roman alphabet. The consistent layout of the global navigation bar also allows predictability even with its seamless
+                design. The design also involves quick access to recovery, in which there exists a button allowing the user to go to
+                the top of the page in one click.<br></h4>
+            <h4>The Robust principle states that content must be robust enough that it can be interpreted reliably by a wide variety
+                of user agents, including assistive technologies. In context to the writing of HTML CSS code, the implementation
+                ensures all tags are closed properly, and naming conventions are easily understandable. Code comments are also in
+                place to explain parts of the code.<br></h4>
+        </section>
+        <section id="ia">
+            <h2>Information Architecture</h2>
+            <img src="photos/info_arch.svg" alt="info_arch" class="image">
+            <h3>The figure above is the information architecture of this digital portfolio. The global navigation is very powerful
+                on this page, as contents are accessible from the global navigation. There are five main pages: landing page, about
+                me page, project process page, resume page, and contact page. Another navigation is the footer navigation,
+                consisting of links to social media (LinkedIn), GitHub, and email. These are the navigations that exist consistently
+                throughout the page. The idea of the homepage follows a simplistic design and also the principle of disclosure, in
+                which the landing page only consists of a greeting informing the main purpose of the page. For a user to know more,
+                they should traverse through the page. In pages with lots of content such as the process and resume page, there
+                exists a font-size modifier button to accommodate various users hence inclusivity, and there exists a timetable,
+                which is an internal page navigation. These are the utilities of the digital portfolio. Overall, the IA implies the
+                use of both global and local navigations, in addition to utilities that allow for increased usability and
+                inclusivity.</h3>
+        </section>
+        <section id="wireframe">
+            <h2>Wireframe</h2>
+            <img src="photos/wire_main.jpeg" alt="wire_main" class="image" style="border: 2px solid white;">
+            <h3>The figure above is the wireframe of the <a href=main.html style="color: rgb(71, 16, 16);"> landing</a> page. Notice
+                that the design is very minimalistic. The design is
+                inspired by the concept of minimalist design, where only necessary elements exist - the greeting and purpose of the
+                webpage. A minimalist design can reduce the chance of error, hence the principle of error prevention is achieved.
+                The global navigation also employs multiple cues to inform the user that the navigation bar is at its position
+                despite implementing a seamless design.<br><br><br></h3>
+            <img src="photos/wire_about.jpeg" alt="wire_about" class="image" style="border: 2px solid white;">
+            <h3>The figure above is the wireframe of the <a href=about.html style="color: rgb(71, 16, 16);">about me</a> page. Notice
+                the use of sections and flip cards. The flip card
+                design is inspired by the principle of disclosure whilst also adding the interactive element. The use of sections
+                instead of having them flow as normal content is to categorize the contents: about me, culinary, interests, and
+                hobbies. Categorizing this allows the user to know more about the owner of the portfolio quickly.<br><br><br></h3>
+            <img src="photos/wire_resume.jpeg" alt="wire_resume" class="image" style="border: 2px solid white;">
+            <h3>The figure above is the wireframe of pages that contain paragraphs and images. These are the <a href=process.html
+                    style="color: rgb(71, 16, 16);">process</a> and <a href=process.html style="color: rgb(71, 16, 16);">resume</a>
+                pages, and the design follows the same ideation. The use of an internal page navigation and buttons for
+                accessibility altogether allow for a more accessible and inclusive webpage design in compliance with the WCAG 2.0
+                guideline.<br><br><br></h3>
+            <img src="photos/wire_contact.jpeg" alt="wire_contact" class="image" style="border: 2px solid white;">
+            <h3>The figure above is the wireframe of the <a href=about.html style="color: rgb(71, 16, 16);">contact</a> page. The contact page has field boxes for the visitor to fill out
+                and a button to submit. A map showing the location of the webpage owner is also embedded on the bottom for reference
+                of the owner's whereabouts. Utilizing a form, some of the textboxes are fields that the visitor must fill in before
+                clicking submit. Expect an error prevention message to appear if the user attempts to submit without filling in the
+                required field.<br><br><br></h3>
+
+        </section>
+    </div>
+
+    <!-- Javascript for font size manipulation, smooth transition between pages, and a back-to-top function considering usability -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const navLinks = document.querySelectorAll('.nav a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (event) {
+                    event.preventDefault();
+                    const targetPage = this.getAttribute('href');
+    
+                    document.body.classList.add('fade-out');
+                    setTimeout(() => {
+                        window.location.href = targetPage;
+                    }, 500);
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var backToTopButtonRight = document.getElementById('back-to-top-right');
+
+            window.addEventListener('scroll', function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopButtonRight.style.display = 'block';
+                } else {
+                    backToTopButtonRight.style.display = 'none';
+                }
+            });
+
+            backToTopButtonRight.addEventListener('click', function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var backToTopButtonLeft = document.getElementById('back-to-top-left');
+
+            window.addEventListener('scroll', function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    backToTopButtonLeft.style.display = 'block';
+                } else {
+                    backToTopButtonLeft.style.display = 'none';
+                }
+            });
+
+            backToTopButtonLeft.addEventListener('click', function () {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+        });
+    </script>
+
+    <script>
+        function adjustFontSize(change) {
+            var content = document.getElementById('content');
+            var currentSize = window.getComputedStyle(content, null).getPropertyValue('font-size');
+            var newSize = parseFloat(currentSize) + change + 'px';
+
+            content.style.fontSize = newSize;
+        }
+    </script>
+    <br><br>
+
+    <div class="footer">
+        <a href="https://github.com/stefanusaw" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/stefanusa-welong" target="_blank">LinkedIn</a>
+        <a href="mailto:stefanus.welong@mail.utoronto.ca">stefanus.welong@mail.utoronto.ca</a>
+    </div>
+
+</body>
+</html>
